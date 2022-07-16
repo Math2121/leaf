@@ -26,7 +26,7 @@ function Values() {
             sed. Quis eros malesuada venenatis{" "}
           </p>
 
-          <button className="bg-white rounded-full p-3 mt-4 w-40">
+          <button className="bg-white font-nunito text-green-400 rounded-full p-3 mt-4 w-40">
             Visite a Loja
           </button>
         </div>
