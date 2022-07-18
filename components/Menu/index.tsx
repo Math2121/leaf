@@ -32,7 +32,7 @@ function Menu() {
             </li>
             <li className="  pl-4">
               <a href="#" className="block pl-7 link">
-                PLND
+                PNLD
               </a>
             </li>
             <li className="  pl-4">
@@ -84,7 +84,7 @@ function Menu() {
               </li>
               <li className="border-b-2 border-white hover:bg-[#639948] hover:text-white pl-4">
                 <a href="#" className="block pl-7">
-                  PLND
+                  PNLD
                 </a>
               </li>
               <li className="border-b-2 border-white hover:bg-[#639948] hover:text-white pl-4">

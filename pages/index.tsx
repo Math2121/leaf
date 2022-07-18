@@ -18,10 +18,8 @@ const Home: NextPage = () => {
       </section>
       <Banner />
       <section className="container mt-10 m-auto p-2">
-        <div className="grid md:grid-cols-2 gap-4 items-center">
-          <div className="flex items-start">
-            <img src="picture1.png" alt="" className="object-cover" />
-          </div>
+        <div className="grid md:grid-cols-1 gap-4 items-center">
+         
           <div className="intro">
             <div className="mb-4">
               <span className="font-bahnschrift text-green-400 text-xl">
