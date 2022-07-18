@@ -12,7 +12,7 @@ export function Vision() {
           </div>
           <div className="intro">
             <div className="mb-4">
-              <span className="font-bahnschrift text-green-400 text-sm">
+              <span className="font-bahnschrift text-green-400 text-xl">
               Visão
               </span>
               <h2 className="text-black-100 font-bold font-nunito text-xl">

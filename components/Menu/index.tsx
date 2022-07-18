@@ -31,6 +31,11 @@ function Menu() {
               </a>
             </li>
             <li className="  pl-4">
+              <a href="#" className="block pl-7 link">
+                PLND
+              </a>
+            </li>
+            <li className="  pl-4">
               <a href="#" className="block pl-7 link flex gap-2">
                 <img src="/shopping.svg" alt=" Loja Virtual" />
                 Loja Virtual
@@ -60,29 +65,34 @@ function Menu() {
               open ? "block active" : ""
             }`}
           >
-            <ul className="bg-gray-100 shadow-lg leading-9 font-bold h-screen">
-              <li className="border-b-2 border-white hover:bg-red-400 hover:text-white pl-4">
+            <ul className="bg-[#868587] shadow-lg leading-9 font-bold h-screen">
+              <li className="border-b-2 border-white hover:bg-[#639948] hover:text-white pl-4">
                 <a href="https://google.com" className="block pl-7">
                   Home
                 </a>
               </li>
-              <li className="border-b-2 border-white hover:bg-red-400 hover:text-white pl-4">
+              <li className="border-b-2 border-white hover:bg-[#639948] hover:text-white pl-4">
                 <a href="#" className="block pl-7">
                   A Editora
                 </a>
               </li>
 
-              <li className="border-b-2 border-white hover:bg-red-400 hover:text-white pl-4">
+              <li className="border-b-2 border-white hover:bg-[#639948] hover:text-white pl-4">
                 <a href="#" className="block pl-7">
                   Autores
                 </a>
               </li>
-              <li className="border-b-2 border-white hover:bg-red-400 hover:text-white pl-4">
+              <li className="border-b-2 border-white hover:bg-[#639948] hover:text-white pl-4">
+                <a href="#" className="block pl-7">
+                  PLND
+                </a>
+              </li>
+              <li className="border-b-2 border-white hover:bg-[#639948] hover:text-white pl-4">
                 <a href="#" className="block pl-7">
                   Loja Virtual
                 </a>
               </li>
-              <li className="border-b-2 border-white hover:bg-red-400 hover:text-white pl-4">
+              <li className="border-b-2 border-white hover:bg-[#639948] hover:text-white pl-4">
                 <a href="#" className="block pl-7">
                   Contato
                 </a>
