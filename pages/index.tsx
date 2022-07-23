@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 import Values from "../components/Values";
 import { Vision } from "../components/Vision";
 
-const DynamicComponentWithNoSSR = dynamic(() => import("../components/Menu"), {
+export const DynamicComponentWithNoSSR = dynamic(() => import("../components/Menu"), {
   ssr: false,
 });
 
@@ -19,7 +19,6 @@ const Home: NextPage = () => {
       <Banner />
       <section className="container mt-10 m-auto p-2">
         <div className="grid md:grid-cols-1 gap-4 items-center">
-         
           <div className="intro">
             <div className="mb-4">
               <span className="font-bahnschrift text-green-400 text-xl">
@@ -55,3 +54,5 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+
