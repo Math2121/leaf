@@ -3,7 +3,18 @@ import { ListNavigation } from "./styles";
 
 function Footer() {
   return (
-    <footer className="mt-36 bg-gray-200 pb-20">
+    <footer className="mt-36 bg-gray-200 pb-20 relative">
+      <a
+        href="https://wa.me/message/4UVQB6G546T4F1"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img
+          src="whatsapp.png"
+          alt=""
+          className="fixed bottom-5 right-5 w-10"
+        />
+      </a>
       <div className="container mx-auto grid md:grid-cols-3 gap-4 justify-around ,d:justify-items-center md:items-center p-2 sm:grid-cols-1 sm:items-start">
         <div className="pt-10">
           <img src="/logo.png" alt="logo Leaf" className="h-20 mb-4" />
@@ -16,7 +27,7 @@ function Footer() {
 
           <div className="link flex mt-4 gap-4">
             <a href="#" className="transition duration-500 hover:scale-75">
-              <img src="/facebook.svg" alt="link facebook "  />
+              <img src="/facebook.svg" alt="link facebook " />
             </a>
             <a href="#" className="transition duration-500 hover:scale-75">
               <img src="/insta.svg" alt="link instagram" />
