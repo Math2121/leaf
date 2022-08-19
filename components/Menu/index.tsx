@@ -69,33 +69,33 @@ function Menu() {
             <ul className="bg-[#868587] shadow-lg leading-9 font-bold h-screen">
               <li className="border-b-2 border-white hover:bg-[#639948] hover:text-white pl-4">
                 <Link href="/" className="block pl-7">
-                  Home
+                  <a className="block w-100"> Home</a>
                 </Link>
               </li>
               <li className="border-b-2 border-white hover:bg-[#639948] hover:text-white pl-4">
                 <Link href="/sobre" className="block pl-7">
-                  A Editora
+                  <a className="block w-100">A Editora</a>
                 </Link>
               </li>
 
               <li className="border-b-2 border-white hover:bg-[#639948] hover:text-white pl-4">
                 <Link href="/autores" className="block pl-7">
-                  Autores
+                  <a className="block w-100">Autores</a>
                 </Link>
               </li>
               <li className="border-b-2 border-white hover:bg-[#639948] hover:text-white pl-4">
                 <Link href="/" className="block pl-7">
-                  PNLD
+                  <a className="block w-100"> PNLD</a>
                 </Link>
               </li>
               <li className="border-b-2 border-white hover:bg-[#639948] hover:text-white pl-4">
                 <Link href="/" className="block pl-7">
-                  Loja Virtual
+                  <a className="block w-100"> Loja Virtual </a>
                 </Link>
               </li>
               <li className="border-b-2 border-white hover:bg-[#639948] hover:text-white pl-4">
                 <Link href="/contato" className="block pl-7">
-                  Contato
+                  <a className="block w-100"> Contato </a>
                 </Link>
               </li>
             </ul>
