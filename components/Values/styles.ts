@@ -22,9 +22,7 @@ export const ValueContainer = styled.div`
   align-items: center;
   justify-content: space-around;
 
-  .values-text {
-    width: 50%;
-  }
+
   @media screen and (max-width: 768px) {
     text-align: center;
     flex-direction: column;

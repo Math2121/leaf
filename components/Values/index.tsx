@@ -4,39 +4,28 @@ import { Section, ValueContainer } from "./styles";
 function Values() {
   return (
     <Section className="relative">
-      <img
-        src="picture5.png"
-        alt="retangulo verde"
-        className="absolute -z-10  md:block sm:hidden hidden pic-md"
-      />
-      <img
-        src="picture6.png"
-        alt="retangulo verde"
-        className="absolute -z-10 top-5 md:hidden sm:block h-full"
-      />
-      <ValueContainer className="container mx-auto p-2  z-20s md:text-left sm:text-center text-center ">
+
+      <ValueContainer className="container mx-auto p-2 grid grid-cols-1 md:grid-cols-2  gap-2  md:text-left sm:text-center text-center ">
         <div className="values-text ">
-          <h2 className="text-black-200 mt-10 font-bold font-nunito text-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est a
-            imperdiet id lobortis.
-          </h2>
-          <p className="text-base mt-4 text-white font-nunito leading-loose">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus risus
-            nulla pharetra etiam odio cursus. Pulvinar sit cum malesuada nisl
-            sed. Quis eros malesuada venenatis{" "}
+
+          <p className="text-base mb-4 text-gray-100 font-nunito leading-loose">
+            Os livros infantis e juvenis são a base da educação e do futuro. Aprender é o melhor presente
+            que podemos oferecer aos pequenos. A Leaf Editora oferece a oportunidade de aprender de
+            um jeito divertido, com histórias inesquecíveis que marcarão a vida de cada leitor.<br></br>
+            Os livros para educadores são publicações que visam ajudar os professores a melhorar suas
+            habilidades e práticas de ensino. Eles podem incluir estratégias de ensino inovadoras, técnicas
+            de gerenciamento de sala de aula, orientações para lidar com diferentes tipos de alunos e
+            tópicos relacionados à educação, como políticas educacionais e desenvolvimento de currículo.
+            E tudo isso espelhando as exigências da Educação do agora-futuro.
           </p>
 
-          <button className="bg-white font-nunito font-medium text-green-400 rounded-full p-3 mt-4 w-40">
+          <button className="bg-green-400 font-nunito font-medium text-white rounded-full p-3 mt-4 w-40">
             Visite a Loja
           </button>
         </div>
-        <div>
-          <img
-            src="/hand.png"
-            alt="imagem de uma mão com livro"
-            className="object-cover  md:h-4/6 sm:h-5 "
-          />
-        </div>
+
+        <div className="w-full" ><img src="./leafs.png" alt="" /></div>
+
       </ValueContainer>
     </Section>
   );

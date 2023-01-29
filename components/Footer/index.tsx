@@ -20,9 +20,7 @@ function Footer() {
           <img src="/logo.png" alt="logo Leaf" className="h-20 mb-4" />
 
           <p className="tex-black-200 text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus risus
-            nulla pharetra etiam odio cursus. Pulvinar sit cum malesuada nisl
-            sed. Quis eros malesuada venenatis nec convallis{" "}
+          A fotossíntese pelos livros
           </p>
 
           <div className="link flex mt-4 gap-4">
@@ -78,18 +76,18 @@ function Footer() {
           <div className="flex items-center gap-2 mt-5">
             <img src="/mapper.svg" alt="" />
             <p className="text-black-200">
-              2715 Ash Dr. San Jose, South Dakota 83475
+            Rua Darwin | Volta Redonda | RJ
             </p>
           </div>
 
           <div className="flex items-center gap-2 mt-9">
             <img src="/phone.svg" alt="" />
-            <p className="text-black-200">(225) 555-0118</p>
+            <p className="text-black-200">+55 24 9.9854.0036</p>
           </div>
 
           <div className="flex items-center gap-2 mt-9">
             <img src="/mail.svg" alt="" />
-            <p className="text-black-200">aline.reis@gmail.com</p>
+            <p className="text-black-200">contato@leafeditora.com.br</p>
           </div>
         </div>
       </div>

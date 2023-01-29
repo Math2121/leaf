@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 import Values from "../components/Values";
+
 import { Vision } from "../components/Vision";
 
 export const DynamicComponentWithNoSSR = dynamic(() => import("../components/Menu"), {
@@ -24,24 +25,14 @@ const Home: NextPage = () => {
               <span className="font-bahnschrift text-green-400 text-xl">
                 A Leaf
               </span>
-              <h2 className="text-black-100 font-bold font-nunito text-xl">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est a
-                imperdiet id lobortis.
-              </h2>
+      
             </div>
 
             <p className="text-base mb-4 text-gray-100 font-nunito leading-loose">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus
-              risus nulla pharetra etiam odio cursus. Pulvinar sit cum malesuada
-              nisl sed. Quis eros malesuada venenatis nec convallis egestas
-              nibh. Sit elementum nulla ac in lacus aenean venenatis.
-            </p>
-
-            <p className=" text-base text-gray-100 font-nunito leading-loose">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus
-              risus nulla pharetra etiam odio cursus. Pulvinar sit cum malesuada
-              nisl sed. Quis eros malesuada venenatis nec convallis egestas
-              nibh. Sit elementum nulla ac in lacus aenean venenatis.
+              É uma editora de livros infantis e juvenis que oferece aos seus leitores um mundo de fantasia e
+              diversão. Nossos livros são repletos de personagens inesquecíveis e histórias que farão você
+              rir, chorar e se apaixonar. Também publicamos livros que interessam os educadores e os farão
+              pensar em suas práticas, proporcionando a fotossíntese através do conhecimento.
             </p>
           </div>
         </div>
