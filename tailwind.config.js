@@ -6,6 +6,21 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        'fade-in-down': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(-10px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)'
+          },
+        }
+      },
+      animation: {
+        'fade-in-down': 'fade-in-down 0.5s ease-out'
+      },
       zIndex: {
         "-10": "-10",
       },
@@ -16,8 +31,8 @@ module.exports = {
       colors: {
         gray: {
           100: "#A56A59",
-          200:"#F3F3F3",
-          300:"#FAFAFA"
+          200: "#F3F3F3",
+          300: "#FAFAFA"
         },
         black: {
           100: "#353436",
