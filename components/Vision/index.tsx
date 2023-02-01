@@ -28,7 +28,7 @@ export function Vision() {
         </div>
       </section>
 
-      <section className="container mt-10 m-auto p-2">
+      <section className="container mt-5 m-auto p-2">
         <div className="grid md:grid-cols-2 gap-4 items-center">
       
           <div className="intro">
@@ -53,7 +53,7 @@ export function Vision() {
         </div>
       </section>
 
-      <section className="container mt-10 m-auto p-2">
+      <section className="container mt-5 m-auto p-2">
         <div className="grid md:grid-cols-2 gap-4 items-center">
           <div className="flex items-start">
             <img src="vaso.png" alt="" className="object-cover" />
