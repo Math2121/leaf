@@ -17,7 +17,7 @@ export default function Sobre() {
 
       <main className="container m-auto mt-10 p-2">
         <img src="leaf.png" alt="" className="m-auto opacity-25 h-20" />
-        <p className="text-base text-gray-100 font-nunito leading-loose text-center">
+        <p className="text-base text-gray-100 font-nunito leading-loose">
           Criada em 2020, a editora passou por algumas mudanças e, após alguns estudos, decidiu-se
           pela paixão do livro infantil e juvenil. Além disso, não poderia deixar o educador sem leituras e
           fontes a beber. Assim, criou a coleção Pétalas, com conteúdos aos educadores que desejam

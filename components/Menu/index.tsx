@@ -11,12 +11,16 @@ function Menu() {
     text?: string
   }
   let [open, setOpen] = useState<boolean>(false);
+  let [openMobile, setOpenMobile] = useState<boolean>(false);
   const [visible, setVisible] = useState<boolean>(false)
   const [infoModal, setInfoModal] = useState<ModalLink>({ active: false })
 
   const changeIcon = () => {
     setOpen(!open);
   };
+  const abriCatalogo = () =>{
+    setOpenMobile(!openMobile);
+  }
   const changeVisibleLink = () => {
     setVisible(!visible);
   }
@@ -75,9 +79,9 @@ function Menu() {
                 </li>
               </ul>
               <div className={`flex items-center justify-between mt-2 ${visible ? 'flex' : 'hidden'}`}>
-                <span onClick={() => openModal('semente')}>Sementes </span> |
-                <span onClick={() => openModal('raizes')}>Raízes </span>|
-                <span onClick={() => openModal('petala')}>Pétalas </span>|
+                <span onClick={() => openModal('semente')} className="cursor-pointer">Sementes </span> |
+                <span onClick={() => openModal('raizes')} className="cursor-pointer">Raízes </span>|
+                <span onClick={() => openModal('petala')} className="cursor-pointer">Pétalas </span>|
                 <span>PNLD </span>
               </div>
             </div>
@@ -116,8 +120,14 @@ function Menu() {
                 </li>
                 <li className="border-b-2 border-white hover:bg-[#639948] hover:text-white pl-4">
                   <Link href="/" className="block pl-7">
-                    <a className="block w-100"> PNLD</a>
+                    <a className="block w-100"  onClick={() => abriCatalogo()}> Catálogo</a>
                   </Link>
+                  <div className={`flex items-center justify-between mt-2 ${openMobile ? 'flex' : 'hidden'}`}>
+                    <span onClick={() => openModal('semente')} className="cursor-pointer">Sementes </span> |
+                    <span onClick={() => openModal('raizes')} className="cursor-pointer">Raízes </span>|
+                    <span onClick={() => openModal('petala')} className="cursor-pointer">Pétalas </span>|
+                    <span>PNLD </span>
+                  </div>
                 </li>
                 <li className="border-b-2 border-white hover:bg-[#639948] hover:text-white pl-4">
                   <Link href="/" className="block pl-7">
@@ -136,7 +146,7 @@ function Menu() {
       </MenuView>
       <ModalLinks openModal={infoModal.active}
         title={infoModal?.title}
-        text={infoModal?.text}  onRequestClose={()=>setInfoModal({active: false})}/>
+        text={infoModal?.text} onRequestClose={() => setInfoModal({ active: false })} />
     </>
   );
 }
