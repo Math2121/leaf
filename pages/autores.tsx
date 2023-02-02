@@ -62,6 +62,7 @@ export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
       autores: res
-    }
+    },
+    revalidate: 14400, 
   }
 }
