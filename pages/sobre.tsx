@@ -3,7 +3,7 @@ import { DynamicComponentWithNoSSR } from ".";
 import Footer from "../components/Footer";
 import { Intro } from "../components/Intro";
 import client from "../src/graphql/client";
-import { GET_EDITORA } from "../src/graphql/queries";
+
 
 
 export default function Sobre() {
