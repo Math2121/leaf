@@ -28,11 +28,11 @@ function Autor({ autores }: Props) {
         <main className=" grid grid-cols-1 md:grid-cols-2 items-start gap-10 mt-20" key={item.slug}>
      
 
-          <img
+          {/* <img
             src={item.imagem}
             alt=""
             className="object-cover h-full w-full rounded-md  "
-          />
+          /> */}
 
           <div>
             <h2 className="font-bahnschrift text-green-400 text-4xl  mt-5">

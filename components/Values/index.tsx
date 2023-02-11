@@ -24,7 +24,7 @@ function Values() {
           </button>
         </div>
 
-        <div className="w-full" ><img src="./leafs.png" alt="" /></div>
+        {/* <div className="w-full" ><img src="./leafs.png" alt="" /></div> */}
 
       </ValueContainer>
     </Section>
