@@ -65,8 +65,8 @@ function Autor({ autores }: Props) {
 
 export default Autor;
 
-export const getServerSideProps: GetServerSideProps = async ({ req, params }) => {
-  const { autor } = params
+export const getServerSideProps: GetServerSideProps = async ({ params  }) => {
+  const autor = params?.autor as string
   const data = await client.request<{ autor: any[] }>(GET_LIVROS, { slug: autor });
 
   let res = data.autor.map(item => {
