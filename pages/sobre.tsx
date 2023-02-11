@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { DynamicComponentWithNoSSR } from ".";
 import Footer from "../components/Footer";
@@ -16,7 +17,7 @@ export default function Sobre() {
       <Intro title="A Editora" />
 
       <main className="container m-auto mt-10 p-2">
-        <img src="leaf.png" alt="" className="m-auto opacity-25 h-20" />
+        <Image src="leaf.png" alt="" className="m-auto opacity-25 h-20" />
         <p className="text-base text-gray-100 font-nunito leading-loose">
           Criada em 2020, a editora passou por algumas mudanças e, após alguns estudos, decidiu-se
           pela paixão do livro infantil e juvenil. Além disso, não poderia deixar o educador sem leituras e

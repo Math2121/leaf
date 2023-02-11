@@ -1,4 +1,5 @@
 import { GetStaticProps } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { DynamicComponentWithNoSSR } from ".";
 import Footer from "../components/Footer";
@@ -27,7 +28,7 @@ function Autores({ autores }: Props) {
 
             <div className="w-full group" key={item.slug}>
               <Link href={`/autor/${item.slug}`}>
-                <img
+                <Image
                   src={item.imagem}
                   alt=""
                   className="object-cover h-full w-full rounded-md filter grayscale group-hover:grayscale-0 transition-all duration-200 cursor-pointer" loading="lazy"
