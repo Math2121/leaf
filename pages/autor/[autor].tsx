@@ -52,7 +52,7 @@ function Autor({ autores }: Props) {
       
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
           {autores[0].livros.map((item) => (
-            <img src={item.url} alt="" className="h-full w-full mt-8"  />
+            <img src={item.url} alt="" className="h-full w-full mt-8"  key={item.url} />
             ))}
           </div>
     
