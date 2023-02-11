@@ -1,8 +1,47 @@
+import { useState } from "react";
 import { DynamicComponentWithNoSSR } from ".";
 import Footer from "../components/Footer";
 import { Intro } from "../components/Intro";
+import api from "../src/axios/api";
+
+interface IContatoData {
+  nome: string;
+  email: string;
+  endereco: string;
+  cidade: string;
+  estado: string;
+  cep: string;
+  profissao: string
+
+}
+
 
 function Contato() {
+
+  const [formData, setFormData] = useState<IContatoData>({
+    nome: '',
+    email: '',
+    endereco: '',
+    cidade: '',
+    estado: '',
+    cep: '',
+    profissao: ''
+  })
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+
+   try {
+    const res = await api.post('/email.php', formData)
+    console.log(res)
+   } catch (error) {
+    
+   }
+  }
+
+  const handleChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value })
+  }
   return (
     <>
       <section className="container m-auto p-2">
@@ -25,49 +64,71 @@ function Contato() {
               Cadastre-se
             </h2>
 
-
-            <input
-              type="text"
-              className="bg-gray-200 p-2 h-10 mb-5 rounded-md mt-2"
-              placeholder="Nome"
-            />
-            <input
-              type="text"
-              className="bg-gray-200 p-2 h-10 mb-5 rounded-md"
-              placeholder="E-mail"
-            />
-            <input
-              type="text"
-              className="bg-gray-200 p-2 h-10 mb-5 rounded-md"
-              placeholder="Endereço"
-            />
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+            <form onSubmit={handleSubmit} className="flex flex-col ">
+              <input
+                type="text"
+                name="nome"
+                className="bg-gray-200 p-2 h-10 mb-5 rounded-md mt-2"
+                placeholder="Nome"
+                required
+                onChange={handleChange}
+              />
+              <input
+                type="email"
+                name="email"
+                required
+                className="bg-gray-200 p-2 h-10 mb-5 rounded-md"
+                placeholder="E-mail"
+                onChange={handleChange}
+              />
+              <input
+                type="text"
+                required
+                name="endereco"
+                className="bg-gray-200 p-2 h-10 mb-5 rounded-md"
+                placeholder="Endereço"
+                onChange={handleChange}
+              />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                <input
+                  type="text"
+                  name="cidade"
+                  required
+                  className="bg-gray-200 p-2 h-10 mb-5 rounded-md"
+                  placeholder="Cidade*"
+                  onChange={handleChange}
+                />
+                <input
+                  type="text"
+                  name="estado"
+                  required
+                  className="bg-gray-200 p-2 h-10 mb-5 rounded-md"
+                  placeholder="Estado"
+                  onChange={handleChange}
+                />
+              </div>
               <input
                 type="text"
                 className="bg-gray-200 p-2 h-10 mb-5 rounded-md"
-                placeholder="Cidade*"
+                placeholder="Cep"
+                name="cep"
+                required
+                onChange={handleChange}
               />
               <input
                 type="text"
                 className="bg-gray-200 p-2 h-10 mb-5 rounded-md"
-                placeholder="Estado"
+                placeholder="Profissão"
+                required
+                name="profissao"
+                onChange={handleChange}
               />
-            </div>
-            <input
-              type="text"
-              className="bg-gray-200 p-2 h-10 mb-5 rounded-md"
-              placeholder="Cep"
-            />
-            <input
-              type="text"
-              className="bg-gray-200 p-2 h-10 mb-5 rounded-md"
-              placeholder="Profissão"
-            />
 
 
-            <button className="bg-green-400 font-nunito font-medium text-white rounded-full p-3 mt-4 w-40">
-              Enviar
-            </button>
+              <button type="submit" className="bg-green-400 font-nunito font-medium text-white rounded-full p-3 mt-4 w-40">
+                Enviar
+              </button>
+            </form>
           </div>
         </main>
       </div>
