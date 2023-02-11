@@ -42,7 +42,7 @@ function Menu() {
       <MenuView>
         <nav className="relative px-2 py-4">
           <div className="container mx-auto flex justify-between items-center">
-            {/* <img src="logo.png" alt="Leaf Editora" className="object-cover" /> */}
+            <img src="logo.png" alt="Leaf Editora" className="object-cover" />
             <div>
               <ul className="hidden md:flex space-x-6">
                 <li className=" pl-4">
@@ -67,7 +67,7 @@ function Menu() {
                   </Link>
                 </li>
                 <li className="  pl-4 flex gap-2 items-center">
-                  {/* <img src="/shopping.svg" alt=" Loja Virtual" className="h-4" /> */}
+                  <img src="/shopping.svg" alt=" Loja Virtual" className="h-4" />
                   <Link href="/">
                     <a className="link"> Loja Virtual</a>
                   </Link>
