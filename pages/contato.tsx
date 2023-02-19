@@ -32,12 +32,17 @@ function Contato() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
-   try {
-    const res = await api.post('/email.php', formData)
-    console.log(res)
-   } catch (error) {
-    
-   }
+    try {
+      const res = await axios.post('https://leafeditora.com.br/email.php', formData, {
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*"
+        }
+      })
+      console.log(res)
+    } catch (error) {
+
+    }
   }
 
   const handleChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
