@@ -33,7 +33,7 @@ function Contato() {
     e.preventDefault()
 
    try {
-    const res = await axios.post('https://leafeditora.com.br/email.php', formData)
+    const res = await api.post('/email.php', formData)
     console.log(res)
    } catch (error) {
     

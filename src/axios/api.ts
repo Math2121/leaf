@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default axios.create({
-    baseURL: 'https://leafeditora.com.br',
+    baseURL: process.env.API_URL,
     headers: {
         "Content-Type": "application/json",
         "Access-Control-Allow-Origin": "*"
