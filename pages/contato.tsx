@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useState } from "react";
 import { DynamicComponentWithNoSSR } from ".";
 import Footer from "../components/Footer";
@@ -32,7 +33,7 @@ function Contato() {
     e.preventDefault()
 
    try {
-    const res = await api.post('/email.php', formData)
+    const res = await axios.post('https://leafeditora.com.br/email.php', formData)
     console.log(res)
    } catch (error) {
     
